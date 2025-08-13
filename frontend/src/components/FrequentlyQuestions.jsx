@@ -23,9 +23,9 @@ const FrequentlyQuestions = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-16 px-8 bg-white">
-      <div className="container mx-auto max-w-3xl">
-        <h2 className="text-[27px] font-bold text-[#4F46E5] text-center mb-8">
+    <div className="w-full flex flex-col justify-center items-center py-16 lg:py-12 px-8 bg-white">
+      <div className="container mx-auto max-w-3xl lg:max-w-2xl">
+        <h2 className="text-[27px] lg:text-[24px] font-bold text-[#4F46E5] text-center mb-8 lg:mb-6">
           Frequently asked questions
         </h2>
         
@@ -33,18 +33,18 @@ const FrequentlyQuestions = () => {
           {faqData.map((faq, index) => (
             <div key={index} className="mb-4">
               <div 
-                className="bg-[#f8f7ff] p-6 rounded-md cursor-pointer"
+                className="bg-[#f8f7ff] p-6 lg:p-5 rounded-md cursor-pointer"
                 onClick={() => toggleQuestion(index)}
               >
                 <div className="flex justify-between items-center">
-                  <h3 className="font-medium text-gray-800">{faq.question}</h3>
-                  <span className="text-[22px] text-[#4F46E5]">
+                  <h3 className="font-medium text-gray-800 lg:text-[15px]">{faq.question}</h3>
+                  <span className="text-[22px] lg:text-[20px] text-[#4F46E5]">
                     {openQuestion === index ? "−" : "+"}
                   </span>
                 </div>
                 
                 {openQuestion === index && (
-                  <div className="mt-2 text-gray-600 text-[18px]">
+                  <div className="mt-2 text-gray-600 text-[18px] lg:text-[15px]">
                     {faq.answer}
                   </div>
                 )}

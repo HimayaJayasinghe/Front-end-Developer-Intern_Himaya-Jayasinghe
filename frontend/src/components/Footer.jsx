@@ -2,23 +2,23 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#4F46E5] text-white py-12 px-10">
-      <div className="container mx-auto max-w-7xl">
-        <div className="flex flex-col md:flex-row justify-between mb-12">
+    <footer className="bg-[#4F46E5] text-white py-12 lg:py-10 px-10 lg:px-8">
+      <div className="container mx-auto max-w-7xl lg:max-w-6xl">
+        <div className="flex flex-col md:flex-row justify-between mb-12 lg:mb-10">
           <div className="md:w-1/3 mb-8 md:mb-0">
             <div className="mb-4">
-              <img src="/Logo.png" alt="at digital" className="w-[150px]" />
+              <img src="/Logo.png" alt="at digital" className="w-[150px] lg:w-[135px]" />
             </div>
-            <p className="text-[16px] pr-4">
+            <p className="text-[16px] lg:text-[15px] pr-4">
               Your goal is our target. Not anything in between. We use online
               marketing platforms and tools to achieve single objective - your
               business results.
             </p>
           </div>
           <div className="flex flex-col md:flex-row justify-between md:w-1/3">
-            <div className="mb-6 md:mb-0">
-              <h3 className="font-bold mb-4 text-[21px]">Our Technologies</h3>
-              <ul className="space-y-2 text-sm text-[14px]">
+            <div className="mb-6 md:mb-0 md:mr-8">
+              <h3 className="font-bold mb-4 lg:mb-3 text-[21px] lg:text-[19px]">Our Technologies</h3>
+              <ul className="space-y-2 text-sm text-[14px] lg:text-[13px]">
                 <li>ReactJS</li>
                 <li>Gatsby</li>
                 <li>NextJS</li>
@@ -26,8 +26,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 text-[21px]">Our Services</h3>
-              <ul className="space-y-2 text-sm text-[14px]">
+              <h3 className="font-bold mb-4 lg:mb-3 text-[21px] lg:text-[19px]">Our Services</h3>
+              <ul className="space-y-2 text-sm text-[14px] lg:text-[13px]">
                 <li>Social Media Marketing</li>
                 <li>Web & Mobile App Development</li>
                 <li>Data & Analytics</li>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 pt-4 text-center text-sm">
-          <div className="flex justify-center space-x-4 text-[14px]">
+          <div className="flex justify-center space-x-4 text-[14px] lg:text-[13px]">
             <a href="#" className="hover:underline">
               Privacy Policy
             </a>
